@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* 
+Navigation Bar 
+ */
+
+
+nav{
+    /* Using display flex and JSP to put the image and the nav links
+    side by side */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* The max width of the page  */
+    max-width: 1200px;
+    /* Centrally align the nav bar  */
+    margin: 0 auto;
+    height: 100px;
+
+}
+
+#p__logo{
+    /* Since the image is white, we can use the filter invert to convert the image
+    to black  */
+    filter: invert(1);
+    /* Adjusting the height and width of the image */
+    height: 50px;
+    width: 50px;
+}
+
+.nav__link--list{
+    display: flex;  
+}
+
+.nav__link{
+    margin: 0 12px;
+}
