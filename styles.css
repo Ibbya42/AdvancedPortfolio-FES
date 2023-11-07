@@ -9,6 +9,7 @@
 }
 
 li{
+    /* Remove bulletpoints from the nav links */
     list-style-type: none;
 }
 
@@ -42,9 +43,20 @@ nav{
 }
 
 .nav__link--list{
+    /* Put the nav link options side by side.
+    They were previously ontop of each other */
     display: flex;  
 }
 
 .nav__link{
+    /* Add spacing between the nav link options */
     margin: 0 12px;
+}
+
+/* Editing the text in the nav */
+.nav__link--anchor{
+    text-decoration: none;
+    font-size: 16px;
+    color: #242424;
+    font-weight: 700;
 }
