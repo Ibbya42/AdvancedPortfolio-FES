@@ -13,6 +13,10 @@ li{
     list-style-type: none;
 }
 
+section {
+    background-color: rgb(245 , 245 , 245);
+}
+
 /* 
 Navigation Bar 
  */
@@ -60,3 +64,19 @@ nav{
     color: #242424;
     font-weight: 700;
 }
+
+/* 
+Landing Page 
+ */
+
+ .header{
+    position: absolute;
+    /* How to align an div centrally with the position as 
+    absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* Setting the width to 100% to make the page responsive */
+    width: 100%;
+    max-width: 1000px;
+ }
