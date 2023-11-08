@@ -13,8 +13,17 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 section {
     background-color: rgb(245 , 245 , 245);
+}
+
+button{
+    /* When hovering on a button it will look clickable */
+    cursor: pointer;
 }
 
 .title{
@@ -51,6 +60,7 @@ nav{
     /* Centrally align the nav bar  */
     margin: 0 auto;
     height: 100px;
+    padding: 0 20px;
 
 }
 
@@ -96,6 +106,7 @@ Landing Page
     /* Setting the width to 100% to make the page responsive */
     width: 100%;
     max-width: 1000px;
+    padding: 0 30px;
  }
 
  .header_para{
@@ -104,6 +115,48 @@ Landing Page
     /* Add a max width so that the paragraph does not span to the end 
     of the page */
     max-width: 450px;
+ }
+
+ .social__list{
+    /* Add space between the paragraph and the links */
+    margin-top: 16px;
+    display: flex;
+ }
+
+ .social__link{
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    /* Adds space between the social links */
+    margin-right: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .click{
+    transition: all 300ms ease;
+ }
+
+ .click:hover{
+    transform: scale(1.1);
+ }
+
+ .mail_button{
+    width: 70px;
+    height:70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    /* Used this to align the mail button to the bottom right of the screen */
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
  }
 
  
