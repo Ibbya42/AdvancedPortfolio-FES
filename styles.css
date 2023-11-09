@@ -82,6 +82,17 @@ p{
     }
 }
 
+.container{
+    padding: 50px 0px;
+}
+
+.row{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
 /* 
 Navigation Bar 
  */
@@ -134,6 +145,12 @@ nav{
 /* 
 Landing Page 
  */
+
+ /* Need to set the min-height of the landing page id
+ or the new section will start ontop of the old section  */
+ #landing-page {
+    min-height: 100vh;
+  }
 
  .header{
     position: absolute;
@@ -198,4 +215,29 @@ Landing Page
     right: 40px;
  }
 
+ /* 
+    Projects Section 
+ */
+
+ .section__title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+ }
+
+ .project_img{
+    width: 100%;
+ }
+
+ .project_wrapper{
+    position: relative;
+ }
  
+ .project_description{
+    /* Putting the description position to absolute so it will go inside the 
+    parent class project_wrapper which is set to relative  */
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+ }
