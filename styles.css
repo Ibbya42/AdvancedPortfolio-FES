@@ -231,6 +231,7 @@ Landing Page
 
  .project_wrapper{
     position: relative;
+    border-radius: 20px;
  }
  
  .project_description{
@@ -239,5 +240,19 @@ Landing Page
     position: absolute;
     top: 50%;
     left: 90px;
+    /* Use to center the text on the Y axis */
     transform: translateY(-50%);
+    color: white;
+    max-width: 550px;
+ }
+
+ /* Targets the background of the project when it is hovered over */
+ .project__wrapper--background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    /* Set the opacity to see the background image and make colour lighter */
+    opacity: 0.7;
  }
