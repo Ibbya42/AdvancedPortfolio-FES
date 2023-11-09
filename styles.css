@@ -15,6 +15,7 @@ li{
 
 a{
     text-decoration: none;
+    
 }
 
 section {
@@ -232,7 +233,18 @@ Landing Page
  .project_wrapper{
     position: relative;
     border-radius: 20px;
+    /* Use overflow is the border radius is not working */
+    overflow: hidden;
  }
+
+.project_wrapper:hover  .project_description{
+    /* When we hover over the project wrapper the 
+    text will reappar from the project description 
+    set to the instruction given in the project__description 
+    transition  */
+    opacity: 1;
+    transform: translateY(-50%)
+}
  
  .project_description{
     /* Putting the description position to absolute so it will go inside the 
@@ -240,10 +252,14 @@ Landing Page
     position: absolute;
     top: 50%;
     left: 90px;
-    /* Use to center the text on the Y axis */
-    transform: translateY(-50%);
+    /* Use to center the text on the Y axis 
+    was previously set to 50% but that will be the normal state after hovering*/
+    transform: translateY(100%);
     color: white;
     max-width: 550px;
+    /*  By default the text inside will be hidden  */
+    opacity: 0;
+    transition: opacity 300ms , transform 450ms ease;
  }
 
  /* Targets the background of the project when it is hovered over */
@@ -256,3 +272,21 @@ Landing Page
     /* Set the opacity to see the background image and make colour lighter */
     opacity: 0.7;
  }
+
+.project__description--title{
+    font-size: 40px;
+}
+
+.project__description--subtitle{
+    margin-top: 8px;
+}
+
+.project__description--link{
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.project__description--para{
+    margin: 16px 0;
+}
