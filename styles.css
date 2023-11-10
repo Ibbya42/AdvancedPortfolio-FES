@@ -83,10 +83,13 @@ p{
     }
 }
 
+/* Caps the top to bottom of the page */
 .container{
     padding: 50px 0px;
+    width: 100%;
 }
 
+/* Caps out from side to side for the page */
 .row{
     width: 100%;
     max-width: 1100px;
@@ -245,6 +248,15 @@ Landing Page
     opacity: 1;
     transform: translateY(-50%)
 }
+
+.project_wrapper:hover .project_img{
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.project_wrapper:hover .project__wrapper--background{
+    opacity: 0.7;
+}
  
  .project_description{
     /* Putting the description position to absolute so it will go inside the 
@@ -290,3 +302,13 @@ Landing Page
 .project__description--para{
     margin: 16px 0;
 }
+
+/* 
+Footer
+ */
+
+ footer{
+    background-color: black;
+    display: flex;
+ }
+
