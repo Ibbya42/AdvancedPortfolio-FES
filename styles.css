@@ -267,10 +267,28 @@ Landing Page
 
  .modal__half{
     width: 50%;
+    padding: 40px 72px;
  }
 
  .modal_about{
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .modal__languages{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .modal_language{
+    width: 25%;
+    padding: 16px;
+ }
+
+ .modal__languages--img{
+    width: 100%;
  }
 
  .modal_contact{
