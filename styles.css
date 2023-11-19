@@ -22,6 +22,35 @@ section {
     background-color: rgb(245 , 245 , 245);
 }
 
+input, textarea {
+    width: 100%;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 3px solid whitesmoke;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+input:hover , textarea:hover{
+    border-color: #f06449
+}
+
+textarea{
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+
+}
+
+label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
 button{
     /* When hovering on a button it will look clickable */
     cursor: pointer;
@@ -268,6 +297,10 @@ Landing Page
  .modal__half{
     width: 50%;
     padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
  }
 
  .modal_about{
@@ -306,6 +339,7 @@ Landing Page
 
  .modal__subtitle{
     margin: 12px 0 24px 0;
+    font-size: 14px
  }
 
  .modal_para{
@@ -322,6 +356,27 @@ Landing Page
     bottom: -10px;
     transform: scale(0);
     transition: all 400ms ease
+ }
+
+ .form__item{
+    margin-bottom: 20px;
+ }
+
+ .form_submit{
+    background-color: #f06449;
+    border: 2px solid  #f06449;
+    color: white;
+    font-weight: 700;
+    max-width: 240px;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+ }
+
+ .form_submit:hover{
+    border-color: white;
+    background-color: transparent;
  }
 
  /* 

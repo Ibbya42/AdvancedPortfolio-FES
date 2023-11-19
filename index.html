@@ -82,7 +82,7 @@
         <a href="#projects" class="scroll">
             <div class="scroll_icon click"></div>
         </a>
-
+<!-- Creating a section for the Modal Pop-up page -->
         <div class="modal">
             <div class="modal__half modal_about">
                 <h3 class="modal__title modal__subtitle--about">About me</h3>
@@ -116,7 +116,29 @@
 
                 </div>
             </div>
-            <div class="modal__half modal_contact">Contact Me</div>
+            <div class="modal__half modal_contact">
+            <h3 class="modal__title modal__title--contact">Contact Me</h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">
+                Feel free to contact me! </h3>
+
+                <form id="contact_form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact_submit" class="form_submit">
+                        Send it My way!!
+                    </button>
+                </form>
+            </div>
         </div>
 
 
