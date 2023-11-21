@@ -30,3 +30,9 @@ function contact(event){
             alert("Unavailable")
         })
 }
+
+
+function toggleModal(){
+    // toggle modal 
+    document.body.classList += ' modal__open'
+}
