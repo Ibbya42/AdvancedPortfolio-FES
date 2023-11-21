@@ -297,6 +297,7 @@ Landing Page
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+   
  }
 
  .modal__half{
@@ -306,6 +307,7 @@ Landing Page
     flex-direction: column;
     justify-content: center;
     position: relative;
+
     
  }
 
@@ -337,6 +339,7 @@ Landing Page
  .modal_contact{
     background-color: black;
     color: white;
+    
  }
 
  .modal__title{
@@ -385,13 +388,6 @@ Landing Page
     background-color: transparent;
  }
 
- /* CSS to get the loading screen on the form once it has been submitted */
- .modal__overlay--loading{
-    background-color: black;
-    font-size: 80px;
-    z-index: -1;
- }
-
  /* Animation to get the spinner to rotate in a loading state */
  .fa-spinner{
     animation: spinner 750ms infinite;
@@ -413,7 +409,9 @@ Landing Page
     font-weight: 700;
     text-align: center;
     padding: 28px;
+    
  }
+
 
  .modal__overlay{
     /* Relate to the parent class which is modal__half */
@@ -426,7 +424,19 @@ Landing Page
     align-items: center;
     justify-content: center;
     z-index: -1;
+   
  }
+
+  /* CSS to get the loading screen on the form once it has been submitted */
+  .modal__overlay--loading{
+   background-color: black;
+   font-size: 80px;
+ 
+}
+
+.modal__overlay--visible{
+   z-index: 1;
+}
 
  .modal__exit{
     position: absolute;
