@@ -403,15 +403,6 @@ Landing Page
     }
  }
 
- .modal__overlay--success{
-    background-color: green;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    padding: 28px;
-    
- }
-
 
  .modal__overlay{
     /* Relate to the parent class which is modal__half */
@@ -423,6 +414,7 @@ Landing Page
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Set the Z-index of the overlay to not show the loading and sucess state */
     z-index: -1;
    
  }
@@ -434,7 +426,17 @@ Landing Page
  
 }
 
+.modal__overlay--success{
+   background-color: green;
+   font-size: 40px;
+   font-weight: 700;
+   text-align: center;
+   padding: 28px;
+   
+}
+
 .modal__overlay--visible{
+   /* Show loading and success state once emailjs form is processed */
    z-index: 1;
 }
 
