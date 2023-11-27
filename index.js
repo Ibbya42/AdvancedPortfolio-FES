@@ -12,7 +12,7 @@ function contact(event){
     // The loading const will go into the visible style that will have a z-index of 1. 
     // Modal__overlay will have -1 so it will be hidden behind 
     loading.classList += ' modal__overlay--visible'
-    
+
     // Information from the form will be sent through from emailJs
     emailjs
         .sendForm(
@@ -32,8 +32,13 @@ function contact(event){
         })
 }
 
-
+let isModalOpen = false;
 function toggleModal(){
-    // toggle modal 
+    if (isModalOpen){
+        isModalOpen = false;
+        return document.body.classList.remove("modal__open")
+    }
+    
+    isModalOpen = true;
     document.body.classList += ' modal__open'
 }

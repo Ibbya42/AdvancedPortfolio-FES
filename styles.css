@@ -298,6 +298,8 @@ Landing Page
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5 ease;
    
  }
 
@@ -314,6 +316,7 @@ Landing Page
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: all 300ms ease-in;
 
     
  }
@@ -323,7 +326,15 @@ Landing Page
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateX(-110%);
  }
+
+ .modal__open .modal_about,
+.modal__open .modal_contact
+ {
+   transform: translateX(0%);
+ }
+
 
  .modal__languages{
     display: flex;
@@ -346,6 +357,7 @@ Landing Page
  .modal_contact{
     background-color: black;
     color: white;
+    transform: translateX(110%);
     
  }
 
@@ -418,7 +430,7 @@ Landing Page
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     /* Set the Z-index of the overlay to not show the loading and sucess state */
@@ -445,6 +457,7 @@ Landing Page
 .modal__overlay--visible{
    /* Show loading and success state once emailjs form is processed */
    z-index: 1;
+   display: flex;
 }
 
  .modal__exit{
