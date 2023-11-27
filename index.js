@@ -2,6 +2,21 @@
 // service_hhryq49 - Service id 
 // JZuJGDHwdqUsCxxe9 - Public id 
 
+
+// On initial, the toggle is set to light mode
+
+function toggleConstrast() {
+    let toggleConstrast = false;
+    toggleConstrast = !toggleConstrast;
+    if (toggleConstrast){
+        document.body.classList += " dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
 // Create a function that will be called onsubmit from the form 
 function contact(event){
     event.preventDefault();
