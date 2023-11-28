@@ -4,15 +4,14 @@
 
 
 // On initial, the toggle is set to light mode
-
+let toggleConst = false;
 function toggleConstrast() {
-    let toggleConstrast = false;
-    toggleConstrast = !toggleConstrast;
-    if (toggleConstrast){
-        document.body.classList += " dark-theme"
+    toggleConst = !toggleConst;
+    if (toggleConst){
+        document.body.classList += " dark-theme";
     }
     else{
-        document.body.classList.remove("dark-theme")
+        document.body.classList.remove("dark-theme");
     }
 }
 

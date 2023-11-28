@@ -170,6 +170,20 @@ nav,
 }
 
 
+.dark-theme .scroll_icon{
+   border-color: white;
+}
+
+.dark-theme .scroll_icon:after{
+   background-color: white;
+}
+
+.dark-theme .mail_button{
+   background-color: white;
+   color: black;
+}
+
+
 /* 
 Navigation Bar 
  */
