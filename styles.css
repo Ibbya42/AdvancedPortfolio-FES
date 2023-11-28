@@ -149,6 +149,15 @@ nav,
    transition: all 400ms;
 }
 
+.dark-theme .title,
+
+.dark-theme .nav__link--anchor,
+.dark-theme .header_para{
+
+   color: white;
+}
+
+
 .dark-theme section{
    background-color: black;
 }
