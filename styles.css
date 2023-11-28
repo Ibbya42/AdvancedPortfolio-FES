@@ -174,8 +174,10 @@ nav,
    border-color: white;
 }
 
-.dark-theme .scroll_icon:after{
+.dark-theme .scroll_icon:after,
+.dark-theme .link__hover-effect--black:after{
    background-color: white;
+   
 }
 
 .dark-theme .mail_button{
