@@ -149,10 +149,12 @@ nav,
    transition: all 400ms;
 }
 
+/* Using the dark them class from the Js File to the swtich the characters colours to appear on the webpage */
 .dark-theme .title,
-
 .dark-theme .nav__link--anchor,
-.dark-theme .header_para{
+.dark-theme .header_para,
+.dark-theme .section__title
+{
 
    color: white;
 }
@@ -160,6 +162,11 @@ nav,
 
 .dark-theme section{
    background-color: black;
+}
+
+/* Can use the filter invert function to switch back from black to white */
+.dark-theme #p__logo{
+   filter: invert(0);
 }
 
 
