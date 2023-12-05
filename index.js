@@ -2,6 +2,20 @@
 // service_hhryq49 - Service id 
 // JZuJGDHwdqUsCxxe9 - Public id 
 
+// Js For shapes movement
+const scaleFact = 1/20;
+function moveBackground(event){
+    const shapes = document.querySelectorAll(".shape");
+    const x = event.clientX * scaleFact;
+    const y = event.clientY * scaleFact;
+    
+    for ( let i = 0; i < shapes.length; ++i){
+        const isOdd = i % 2 !==0; 
+        const oddIntegar = isOdd ? -1 : 1;
+        shapes[i].style.transform = `translate(${x * oddIntegar}px , ${y * oddIntegar}px)`
+    }
+}
+
 
 // On initial, the toggle is set to light mode
 let toggleConst = false;
