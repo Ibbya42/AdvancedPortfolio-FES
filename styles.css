@@ -18,6 +18,10 @@ a{
     
 }
 
+HTML{
+   scroll-behavior: smooth;
+}
+
 section {
     background-color: rgb(245 , 245 , 245);
 }
@@ -331,9 +335,10 @@ Landing Page
     background-color: black;
     color: white;
     /* Used this to align the mail button to the bottom right of the screen */
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
  }
 
  /* 
@@ -624,6 +629,7 @@ Footer
     background-color: black;
     display: flex;
     padding: 6% 0;
+    position: relative;
  }
 
  .footer_row{
@@ -722,6 +728,66 @@ Footer
   .shape--8{
    top: 80vh;
    left: 80vw;
+  }
+
+  @media (max-width: 768px){
+
+   .title{
+      font-size: 80px;
+   }
+
+   .header_para{
+      font-size: 20px;
+   }
+
+   .modal{
+      top: 0;
+      left: 0;
+      transform: none;
+      height: auto;
+      width: 100%;
+      flex-direction: column-reverse;
+      border-radius: 0;
+   }
+
+   .modal__half{
+      width: 100%;
+    
+   }
+
+  }
+
+  @media (max-width: 480px) {
+   	.title{
+         font-size: 32px;
+      }
+
+      .header_para{
+         font-size: 18px;
+      }
+
+      .nav__link:first-child{
+         display: none;
+      }
+
+      .project__description--para{
+         display: none;
+      }
+
+      .project_description{
+         left: 0;
+         padding: 0;
+         width: 100%;
+         text-align: center;
+      }
+
+      .project__description--subtitle{
+         margin-bottom: 8px;
+      }
+
+      .modal__half{
+         padding: 40px;
+      }
   }
 
  
